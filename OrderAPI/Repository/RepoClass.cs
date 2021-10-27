@@ -16,6 +16,7 @@ namespace OrderAPI.Repository
 
             using (var db = new dbFlowerStoreContext())
             {
+                ord.DateOfPlaced = DateTime.Now.Date;
                 db.OrderDetails.Add(ord);
                 db.SaveChanges();
             }

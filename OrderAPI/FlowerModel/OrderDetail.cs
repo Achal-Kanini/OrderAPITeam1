@@ -14,6 +14,7 @@ namespace OrderAPI.FlowerModel
         public double? Totalprice { get; set; }
         public string Remark { get; set; }
         public string PaymentStatus { get; set; }
+        public DateTime? DateOfPlaced { get; set; }
 
         public virtual Cart Cart { get; set; }
         public virtual Customer Customer { get; set; }

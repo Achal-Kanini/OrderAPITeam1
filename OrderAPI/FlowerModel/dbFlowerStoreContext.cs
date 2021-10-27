@@ -160,6 +160,8 @@ namespace OrderAPI.FlowerModel
 
                 entity.Property(e => e.CustomerId).HasColumnName("customer_id");
 
+                entity.Property(e => e.DateOfPlaced).HasColumnType("date");
+
                 entity.Property(e => e.FlowerId).HasColumnName("flower_id");
 
                 entity.Property(e => e.PaymentStatus)
